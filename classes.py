@@ -1,8 +1,21 @@
-# Create a Python class named Person.
-# The Person class should have the following attributes:
-# name: representing the person's name.
-# age: representing the person's age.
-# gender: representing the person's gender.
-# Implement a method called introduce that prints a message introducing the person with their name, age, and gender.
-# Create an instance of the Person class and call the introduce method to display the person's information.
-# Create a GitHub repository for your assignment and submit the link.
+# Class
+class Person:
+
+    #attributes
+    def __init__(self, name, age, gender):  
+        self.name = name 
+        self.age = age 
+        self.gender = gender 
+
+    #method 
+    def introduce(self):
+        print(f'Greetings, I am called {self.name}, I am {self.age} years old and I identify as a {self.gender}.')
+ 
+# instance 
+person = Person(
+    name = 'Kenick ohns',
+    age = 22,
+    gender = 'Male')
+
+#output
+person.introduce()
